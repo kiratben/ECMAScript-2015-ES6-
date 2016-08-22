@@ -57,3 +57,19 @@ As ECMAScript.next matured, the code name was dropped and it began going by ECMA
 
 ES6 features are slowly rolling into the interpreters of our modern browsers and servers. The ES6 compatibility table tracks just how much of the standard each engine supports. As of writing, Microsoft’s new Edge browser is actually leading the pack with 67% of ES6 features supported. Firefox 11 (released in March 2012) was the first browser with “significant” support (more than 10%). Transpilers like Babel and Tracer let you compile a lot of ES6 down to valid ES5 for cross-browser compatibility. More on this in a future blog post.
 
+---
+You'll understand the JavaScript is a language that implements the specifications defined in the ECMAScript. The release of a new standard brings new features to the language, but as usual, the browsers support does not change that fast. Lucky for us! It is possible to use the new features offered by the ES2015 (ES2016 and even in preparation) thanks to transpilers as babel. This tool can convert the ES2015 code code compatible with current browsers and can be used with or Browserify Webpack.
+
+## Let & Const
+
+The `let` statement declares a block scope local variable, optionally initializing it to a value.
+
+```javascript
+if (false) {
+    var a1 = 1; 
+    let a2  = 2; 
+}
+console.log(a1) // undefined
+console.log(a2) // erreur: a2 is not defined
+```
+
